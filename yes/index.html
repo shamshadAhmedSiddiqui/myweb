@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    
+    <div class="nav"> 
+        <div class="icon" style="float: left; width: 410px;" >
+        
+             <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+            <a href=""><i class="fab fa-whatsapp"></i></a>
+            
+        </div>
+        <div style="float: left; width: 510px;" >
+            
+       <p> Millions of people's life has changed, millions more awaiting your donation</p>
+
+         
+        </div>
+        
+        <ul class="ul" style="float: right; margin-top: 0px;" >
+         <li  class="li" style="padding-left: 5px; padding-top: 5px;padding-bottom:20px ; padding-right: 10px; float: right;"> <button type="button" name="uk donar">uk donar</button></li>
+         <li class="li" style="padding-left: 5px; padding-top: 5px;padding-bottom:20px ; padding-right: 10px; float:right ;"> <button type="button" name="donate now">donate now</button></li>
+         <li class="li"style="padding-left: 5px; padding-top: 5px;padding-bottom:20px ; padding-right: 10px; float:right "> <button type="button" name="SMIT result">SMIT result</button></li>
+        </ul>
+
+        <p style="clear: both;" ></p>
+
+        </div>
+        <br><br>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="float: right;">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        saylani project</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    future project
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">media </a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">news</a>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      donation
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+          <hr>
+
+        <script>
+            var i=0;
+            var image=[];
+            var time=3000;
+
+            image[0]= 'img1.jpg';
+            image[1]= 'img2.jpg';
+            image[2]= 'img3.jpg';
+            image[3]= 'img4.jpg';
+
+            function changeimg(){
+                document.slider.src=image[i];
+                if (i<image.length -1) {
+                    i++;
+                }
+                else{
+                    i=0;
+                }
+             setTimeout("changeimg()",time);
+            }
+   window.onload=changeimg;
+
+
+
+
+        </script>
+        <img  id="img"name="slider" width="1000px" height="100px">
+        <br><br>
+       
+        <marquee behavior="" direction="" style="background-color: blue; width: 90%;margin-left: 80px; height: 15px;padding-top: 7px; padding-bottom: 10px;"><p id="mypara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, blanditiis. Officia nihil reiciendis ipsam dolores repellat fugiat nulla, necessitatibus vitae eum velit numquam, optio fuga obcaecati quos possimus quas laboriosam.</p>
+        </marquee><br><br><br>
+        <div class="container">
+            <h1 style="text-align: center;">
+                <span style="color: blue;" >
+                    INTRO
+                </span>
+                <span style="color: green;" >
+
+                    DUCTION
+                </span>
+            </h1>
+            <br>
+            
+                
+<p class="para">  Established in May 1999 by famous spiritual and religious scholar Maulana Bashir Ahmed Farooqui, Saylani Welfare International Trust was built on the fundamentals of breaking the cycle of poverty, alleviating the financial troubles of the poor, giving people a chance to live a dignified life and spreading happiness.</p>
+<br><br><br>
+
+<p class="para"> are an organization that believes in lighting up the lives of underprivileged people across the world. We endeavor to provide the best quality services in areas including food, education, medical and social welfare free of cost to people living in the dark. With over 60 different sectors, we feed thousands of hungry people each day, hundreds more are given the hope of life through medical health care, many are educated to become leaders of tomorrow and several are given the opportunity to stand on their feet financially.</p>
+<br><br><br>
+
+<p class="para">Today, we are proud to say that our physical presence extends throughout Pakistan with a vast network of 125 branches operating in major cities including Karachi, Lahore, Islamabad, Rawalpindi, Hyderabad and Faisalabad. Apart from Pakistan, we have overseas offices in the UK, USA and UAE as well. Our worldwide branches are operating under the guidance of a team of over 2,000 working professionals who help almost 125,000 people on a daily basis.</p>
+<br><br><br>
+
+<p class="para">We strongly believe that a little help goes a long way and our work would not be possible without the generous support of our valuable donors. Our local and international donors have graciously lent us a hand by supporting our causes and enabling us to serve the needs of people in need</p>
+<br><br><br>
+            
+
+        </div>
+        <br>
+        <h1 style="text-align: center;">
+            <span style="color: blue;" >
+                IMAGE
+            </span>
+            <span style="color: green;" >
+
+                GALLERY
+            </span>
+        </h1>
+        <br>
+        <div class="main" style="width: 70%;margin-left: 170px; margin-right: 0px;padding-right: 0px;">
+            <table>
+                <tr>
+                    <td> <img src="food (1).jpg" alt="" style="width: 200px;"></td>
+                    <td> <img src="rashan2 (2).jpg" alt=""style="width: 200px;"></td>
+                    <td> <img src="hazrat.jpg" alt=""style="width: 200px;"></td>
+                    <td> <img src="hazrat2.jpg" alt=""style="width: 200px;"></td>
+                    <td> <img src="rashan2 (2).jpg" alt=""style="width: 200px;"></td>
+                </tr>
+            </table>
+
+        </div>
+        <br> <br>
+        <div class="container-fluid" style="background-color: black;">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-sm-4">
+                        <ul>
+                            <p style="margin-left: 0px;padding: 2px; position: static;text-align: left;">Head Office,
+                                A-25, Bahadurabad Chowrangi Karachi, Pakistan
+                                
+                                </p>
+                            <li><i class="fas fa-phone-alt">UAN: 111-729-526 (+0092-213) 4130786-90 </i></li>
+                            <li><i class="fas fa-phone-alt">CELL: 92-311-1729526</i> </li>
+                            <li><i class="fas fa-phone-alt">USA NO +1(716)941 7792</i> </li>
+                            <li><i class="fas fa-phone-alt">UK NO (+44)115 970 6256  </i></li>
+                            <li><i class="fas fa-envelope">info@saylaniwelfare.com</i></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-sm-3">
+                        <h4>useful link</h4>
+                        <hr>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4 >connect with us</h4>
+                        <i class="fab fa-facebook-f" style="float: right;"></i>
+                        <i class="fab fa-twitter" style="float: right;" ></i>
+                        <i class="fab fa-instagram" style="float: right;"></i>
+                    <i class="fab fa-youtube" style="float: right;"></i>
+                        <i class="fab fa-whatsapp" style="float: right;"></i>
+                        
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+   
+        </body>
+</html>
+
